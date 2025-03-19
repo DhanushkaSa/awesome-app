@@ -20,11 +20,18 @@ class ButtonWidget extends StatelessWidget {
         ElevatedButton(
           style: ElevatedButton.styleFrom(
             backgroundColor: backgroundColor,
-            side: BorderSide(width: 2,color: blackColor),
-            padding: EdgeInsets.symmetric(horizontal: 30,vertical: 10)
+            side: BorderSide(width: 2, color: blackColor),
+            padding: EdgeInsets.symmetric(horizontal: 30, vertical: 10),
           ),
           onPressed: () {},
-          child: Text(buttonName,style: TextStyle(color: blackColor,fontWeight: FontWeight.w500,fontSize: 20,),)
+          child: Text(
+            buttonName,
+            style: TextStyle(
+              color: blackColor,
+              fontWeight: FontWeight.w500,
+              fontSize: 20,
+            ),
+          ),
         ),
       ],
     );

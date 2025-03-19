@@ -1,4 +1,5 @@
-import 'package:awesome_places/pages/culture-page.dart';
+import 'package:awesome_places/pages/booking_page/booking_page.dart';
+import 'package:awesome_places/pages/culture_page.dart';
 import 'package:awesome_places/pages/land_marks.dart';
 import 'package:awesome_places/pages/natural_wonders.dart';
 import 'package:awesome_places/pages/night_life.dart';
@@ -148,10 +149,18 @@ class HomePage extends StatelessWidget {
 
                 SizedBox(height: 10),
 
-                Categories(
-                  title: "Book For A Ride Today!",
-                  boxColor: thirdCategoryColor,
-                  boxWidth: double.infinity,
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => BookingPage()),
+                    );
+                  },
+                  child: Categories(
+                    title: "Book For A Ride Today!",
+                    boxColor: thirdCategoryColor,
+                    boxWidth: double.infinity,
+                  ),
                 ),
 
                 SizedBox(height: 30),

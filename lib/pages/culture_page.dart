@@ -85,7 +85,7 @@ class CulturePage extends StatelessWidget {
 
               SizedBox(height: 10),
 
-             InputTextBox(),
+             InputTextBox(hintMessage: "Write here...",),
 
               SizedBox(height: 10),
 
